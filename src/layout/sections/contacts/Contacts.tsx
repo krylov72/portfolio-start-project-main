@@ -35,6 +35,8 @@ export const Contacts = () => {
 const StyledContacts = styled.section`
     background-color: rgb(0,0,0);
     min-height:50vh;
+    display:flex;
+    justify-content:center;
 `
 
 const ContactsBox = styled.div`
@@ -50,7 +52,6 @@ const ContactsIcon = styled.div`
 `
 const StyledForm = styled.form`
     max-width:500px;
-    width:100%;
     display:flex;
     flex-direction:column;
 
