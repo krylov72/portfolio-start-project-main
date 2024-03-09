@@ -2,12 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import bgfirst from '../../../assets/images/bgfirst.webp';
 import { FlexContainer } from '../../../components/FlexContainer';
-import mainbg from '../../../assets/images/bgfirst.webp';
+
 
 export const Main = () => {
     return (
         <MainSection>
-            <FlexContainer align={'center'} justify={'space-around'} wrap={'wrap'} direction={'column'}>
+            <FlexContainer direction='column' align='flex-start'>
                 <WelcomeText>hi! everyone</WelcomeText>
                 <Name>Chris Lee brand designer</Name>
                 <MainText>Make designs mainly logos, visual identities, apps & websites, social media and magazines.</MainText>
@@ -21,8 +21,10 @@ export const Main = () => {
 
 
 const MainSection = styled.section`
-background-image:url(${mainbg});
-background-size:cover;
+
+min-height:50vh;
+display:flex;
+align-items:center;
 `
 const Photo = styled.img`
     
@@ -32,13 +34,13 @@ const ButtonStyled = styled.section`
 `
 
 const WelcomeText = styled.span`
-    
+    color:#ffffff;
 `
 
 const Name = styled.h1`
-    
+    color:#ffffff;
 `
 
 const MainText = styled.span`
-    
+    color:#ffffff;
 `

@@ -19,9 +19,12 @@ export const Contacts = () => {
                     </ContactsIcon>
                 </ContactsBox>
                 <StyledForm>
-                    <Field placeholder='Your name:' />
-                    <Field placeholder='Your email address:' />
-                    <Field as={'textarea'} placeholder='Tell about the project:' />
+                    <FieldText>Your name:</FieldText>
+                    <Field placeholder='Name' />
+                    <FieldText>Your email address:</FieldText>
+                    <Field placeholder='Email' />
+                    <FieldText>Tell about the project:</FieldText>
+                    <Field as={'textarea'} placeholder='About project' />
                     <Button type='submit'>Send<span><Icon iconId='arrowRight' width='30' height='30' /></span></Button>
                 </StyledForm>
         </FlexContainer>
@@ -51,8 +54,15 @@ const StyledForm = styled.form`
     display:flex;
     flex-direction:column;
 
+    legend{
+        color:#ffffff;
+    }
+
     
 `
 const Field = styled.input`
+    
+`
+const FieldText = styled.legend`
     
 `

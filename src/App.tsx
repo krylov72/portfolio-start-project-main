@@ -6,13 +6,16 @@ import { Skills } from './layout/sections/skills/Skills';
 import { Works } from './layout/sections/works/Works';
 import { Testimony } from './layout/sections/testimony/Testimony';
 import { Contacts } from './layout/sections/contacts/Contacts';
+import mainbg from './assets/images/bgfirst.webp';
 
 
 function App() {
     return (
         <MainSection>
-            <Header />
-            <Main />
+            <Wrapper>
+                <Header />
+                <Main />
+            </Wrapper>
             <Skills />
             <Works />
             <Testimony />
@@ -25,4 +28,9 @@ export default App;
 
 const MainSection = styled.section`
 
+`
+
+const Wrapper = styled.div`
+    background-image:url(${mainbg});
+    background-size:cover;
 `

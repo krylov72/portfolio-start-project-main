@@ -15,4 +15,7 @@ export const Icon = (props: IconPropsType) => {
             <use xlinkHref={`${iconsSprite}#${props.iconId}`} />
         </svg>
     );
+
 };
+
+
