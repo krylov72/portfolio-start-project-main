@@ -3,31 +3,35 @@ import styled from 'styled-components';
 import { FlexContainer } from '../../../components/FlexContainer';
 import { Icon } from '../../../components/icons/Icon';
 import { Button } from '../../../components/Button';
+import { Container } from '../../../components/Container';
+import { IconWrapper } from '../skills/skill/Skill';
 
 export const Contacts = () => {
     return (
         <StyledContacts>
-            <FlexContainer direction='row' align='center' justify='space-evenly'>
-                <ContactsBox>
-                    <ContactsText>Let’s Connect</ContactsText>
-                    <ContactsIcon>
-                        <Icon iconId='xzSvg' width='25px' height='25px' />
-                        <Icon iconId='fbSvg' width='25px' height='25px' />
-                        <Icon iconId='ytSvg' width='25px' height='25px' />
-                        <Icon iconId='igSvg' width='25px' height='25px' />
-                        <Icon iconId='twitterSvg' width='25px' height='25px' />
-                    </ContactsIcon>
-                </ContactsBox>
-                <StyledForm>
-                    <FieldText>Your name:</FieldText>
-                    <Field placeholder='Name' />
-                    <FieldText>Your email address:</FieldText>
-                    <Field placeholder='Email' />
-                    <FieldText>Tell about the project:</FieldText>
-                    <Field as={'textarea'} placeholder='About project' />
-                    <Button type='submit'>Send</Button>
-                </StyledForm>
-        </FlexContainer>
+            <Container>
+                <FlexContainer direction='row' align='center' justify='space-around'>
+                    <ContactsBox>
+                        <ContactsText>Let’s Connect</ContactsText>
+                        <ContactsIcon>
+                            <Icon iconId='xzSvg' width='25px' height='25px' />
+                            <Icon iconId='fbSvg' width='25px' height='25px' />
+                            <Icon iconId='ytSvg' width='25px' height='25px' />
+                            <Icon iconId='igSvg' width='25px' height='25px' />
+                            <Icon iconId='twitterSvg' width='25px' height='25px' />
+                        </ContactsIcon>
+                    </ContactsBox>
+                    <StyledForm>
+                        <FieldText>Your name:</FieldText>
+                        <Field placeholder='Name' />
+                        <FieldText>Your email address:</FieldText>
+                        <Field placeholder='Email' />
+                        <FieldText>Tell about the project:</FieldText>
+                        <Field as={'textarea'} placeholder='About project' />
+                        <Button type='submit'>Send</Button>
+                    </StyledForm>
+                </FlexContainer>
+            </Container>
         </StyledContacts >
     );
 };
@@ -40,15 +44,21 @@ const StyledContacts = styled.section`
 `
 
 const ContactsBox = styled.div`
-    
+    max-width:438px;
 `
 
 const ContactsText = styled.p`
-color:#ffffff;
+font-family: 'Poppins',sans-serif;
+font-size: 100px;
+font-weight: 700;
+line-height: 120%;
+letter-spacing: 0%;
+text-align: left;
+margin-bottom:31px;
 `
 
 const ContactsIcon = styled.div`
-    
+
 `
 const StyledForm = styled.form`
     max-width:500px;
