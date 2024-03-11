@@ -32,7 +32,10 @@ const MainSection = styled.section`
 
 `
 
-const Wrapper = styled.div`
+const Wrapper = styled.section`
     background-image:url(${mainbg});
     background-size:cover;
+    background-attachment:fixed;
+    background-position:top left 200px;
+
 `

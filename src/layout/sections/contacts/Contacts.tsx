@@ -25,7 +25,7 @@ export const Contacts = () => {
                     <Field placeholder='Email' />
                     <FieldText>Tell about the project:</FieldText>
                     <Field as={'textarea'} placeholder='About project' />
-                    <Button type='submit'>Send<span><Icon iconId='arrowRight' width='30' height='30' /></span></Button>
+                    <Button type='submit'>Send</Button>
                 </StyledForm>
         </FlexContainer>
         </StyledContacts >
