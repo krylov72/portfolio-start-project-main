@@ -17,7 +17,7 @@ export const Skill = (props: SkillPropsType) => {
         <StyledSkill>
             <FlexContainer direction='column' align='center'>
             <IconWrapper>
-            <Icon width='50px' height='50px'  iconId={props.iconId} />
+            <Icon width='50px' height='50px'   iconId={props.iconId} />
             </IconWrapper>
             <SkillTitle>{props.title}</SkillTitle>
             <SkillDesc>{props.desc}</SkillDesc>

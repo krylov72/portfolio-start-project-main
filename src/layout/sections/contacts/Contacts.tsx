@@ -5,12 +5,13 @@ import { Icon } from '../../../components/icons/Icon';
 import { Button } from '../../../components/Button';
 import { Container } from '../../../components/Container';
 import { IconWrapper } from '../skills/skill/Skill';
+import { theme } from '../../../styles/Theme';
 
 export const Contacts = () => {
     return (
         <StyledContacts>
             <Container>
-                <FlexContainer direction='row' align='center' justify='space-around'>
+                <FlexContainer direction='row' align='center' justify='space-between'>
                     <ContactsBox>
                         <ContactsText>Let’s Connect</ContactsText>
                         <ContactsIcon>
@@ -58,10 +59,12 @@ margin-bottom:31px;
 `
 
 const ContactsIcon = styled.div`
-
+    display:flex;
+    column-gap:50px;
 `
 const StyledForm = styled.form`
     max-width:500px;
+    width:100%;
     display:flex;
     flex-direction:column;
 
@@ -69,11 +72,35 @@ const StyledForm = styled.form`
         color:#ffffff;
     }
 
+    ${Button} {
+            text-align:left;
+
+        &::before{
+            left:0;
+            transform:translateX(0);
+            width:50%;
+            margin-left:-5px;
+            border-radius:0 20px 20px 0;
+        }
+    }
+
     
 `
 const Field = styled.input`
-    
+    border:none;
+    background-color: transparent;
+    color:white;
+    outline:none;
+    resize:none;
+    overflow:auto;
+    border-bottom: 1px solid ${theme.colors.text};
+    margin: 50px 0 40px;
+
 `
 const FieldText = styled.legend`
-    
+    color: ${theme.colors.text};
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: left;
 `
