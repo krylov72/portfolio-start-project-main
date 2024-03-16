@@ -4,13 +4,14 @@ import bgfirst from '../../../assets/images/bgfirst.webp';
 import { FlexContainer } from '../../../components/FlexContainer';
 import { Container } from '../../../components/Container';
 import { theme } from '../../../styles/Theme';
+import { font } from '../../../styles/Common';
 
 
 export const Main = () => {
     return (
         <MainSection>
             <Container>
-                <FlexContainer direction='column' align='flex-start'>
+                <FlexContainer direction='column' align='flex-start' wrap='wrap'>
                     <WelcomeText>hi! everyone</WelcomeText>
                     <Name><span>Chris Lee</span> brand designer</Name>
                     <MainText>Make designs mainly logos, visual identities, apps & websites, social media and magazines.</MainText>
@@ -49,6 +50,10 @@ const ButtonStyled = styled.div`
         width: 254px;
         height: 81px;  
         
+        @media ${theme.media.mobile}{
+            width:200px;
+            height:50px;
+        }
         
         &:hover{
             animation:new 1s ease-in-out;
@@ -84,22 +89,13 @@ const ButtonStyled = styled.div`
 
 const WelcomeText = styled.span`
     background: ${theme.colors.textBgMain};
-    color:${theme.colors.text};
+    ${font({family:"'Josefin Sans',sans-serif", weight:400,Fmax:18,Fmin:15})}
     padding:5px;
-    font-weight:lighter;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 126.02%;
-    letter-spacing: 24%;
     text-transform: uppercase;
-    letter-spacing:5px;
-`
+    `
 
 const Name = styled.h1`
-    color:${theme.colors.text};
-    font-family: 'Poppins', sans-serif;
-    font-size: 95px;
+    ${font({family:"'Josefin Sans',sans-serif", weight:700,Fmax:95,Fmin:45})}
     text-align: left;
     text-transform: capitalize;
     margin:50px 0;
@@ -121,10 +117,7 @@ const Name = styled.h1`
 `
 
 const MainText = styled.span`
-    color:${theme.colors.text};
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 24px;
-    font-weight:400px;
+    ${font({family:"'Josefin Sans',sans-serif", weight:400,Fmax:24,Fmin:20})}
     text-align: left;
     margin-bottom:70px;
 `

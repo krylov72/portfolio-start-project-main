@@ -11,7 +11,7 @@ export const Contacts = () => {
     return (
         <StyledContacts>
             <Container>
-                <FlexContainer direction='row' align='center' justify='space-between'>
+                <FlexContainer direction='row' align='center' justify='space-between' wrap='wrap'>
                     <ContactsBox>
                         <ContactsText>Let’s Connect</ContactsText>
                         <ContactsIcon>

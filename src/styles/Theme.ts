@@ -7,6 +7,11 @@ export const theme = {
         text: 'rgb(255,255,255)',
         accent: '#55332b',
         contactButton: 'rgb(103, 108, 219)'
+    },
+
+    media: {
+        tablet: 'screen and (max-width: 768px)',
+        mobile: 'screen and (max-width: 576px)'
     }
 
 }
