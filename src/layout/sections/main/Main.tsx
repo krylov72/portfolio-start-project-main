@@ -110,8 +110,13 @@ const Name = styled.h1`
             height:20px;
             background-color:${theme.colors.accent};
             position:absolute;
-            bottom:25px;
+            bottom:5px;
             z-index:-1;
+
+            @media ${theme.media.tablet} {
+                height:10px;
+                bottom:10px;
+            }
         }
     }
 `

@@ -6,6 +6,7 @@ import { Button } from '../../../components/Button';
 import { Container } from '../../../components/Container';
 import { IconWrapper } from '../skills/skill/Skill';
 import { theme } from '../../../styles/Theme';
+import { font } from '../../../styles/Common';
 
 export const Contacts = () => {
     return (
@@ -49,12 +50,7 @@ const ContactsBox = styled.div`
 `
 
 const ContactsText = styled.p`
-font-family: 'Poppins',sans-serif;
-font-size: 100px;
-font-weight: 700;
-line-height: 120%;
-letter-spacing: 0%;
-text-align: left;
+${font({family:"'Poppins',sans-serif", weight:700,Fmax:100,Fmin:50, lineHeight:'120%'})}
 margin-bottom:31px;
 `
 
@@ -98,9 +94,6 @@ const Field = styled.input`
 
 `
 const FieldText = styled.legend`
-    color: ${theme.colors.text};
-    font-family: 'Poppins', sans-serif;
-    font-size: 25px;
-    font-weight: 400;
+    ${font({family:"'Poppins',sans-serif", weight:400,Fmax:25,Fmin:20})}
     text-align: left;
 `
