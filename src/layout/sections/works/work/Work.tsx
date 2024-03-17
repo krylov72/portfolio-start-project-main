@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Link } from '../../../../components/Link';
 import { theme } from '../../../../styles/Theme';
 import { Button } from '../../../../components/Button';
+import { font } from '../../../../styles/Common';
 
 type WorkPropsType = {
     title: string
@@ -86,10 +87,14 @@ object-fit:cover;
 const WorkTitle = styled.h3`
 text-transform:capitalize;
 
+${font({family:"'Josefin Sans', sans-serif", weight:700, Fmax:16, Fmin:12})}
+
 
 `
 const WorkText = styled.p`
     margin:14px 0 10px;
+
+    ${font({family:"'Poppins', sans-serif", weight:300, Fmax:16, Fmin:10})}
 `
 
 const Description = styled.div`

@@ -1,10 +1,9 @@
 import styled from "styled-components";
 import { theme } from "../styles/Theme";
+import { font } from "../styles/Common";
 
 export const Link = styled.a`
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
+    ${font({family:"'Poppins', sans-serif", weight:400, Fmax:14, Fmin:10})}
     letter-spacing: 1px;
     text-transform: uppercase;
     padding:10px;

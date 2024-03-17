@@ -52,11 +52,21 @@ const ContactsBox = styled.div`
 const ContactsText = styled.p`
 ${font({family:"'Poppins',sans-serif", weight:700,Fmax:100,Fmin:50, lineHeight:'120%'})}
 margin-bottom:31px;
+
+@media ${theme.media.mobile} {
+    text-align:center;
+}
 `
 
 const ContactsIcon = styled.div`
     display:flex;
     column-gap:50px;
+    @media ${theme.media.mobile} {
+        column-gap:30px;
+        justify-content:center;
+        margin-bottom:10px;
+        
+    }
 `
 const StyledForm = styled.form`
     max-width:500px;
@@ -94,6 +104,6 @@ const Field = styled.input`
 
 `
 const FieldText = styled.legend`
-    ${font({family:"'Poppins',sans-serif", weight:400,Fmax:25,Fmin:20})}
+    ${font({family:"'Poppins',sans-serif", weight:400,Fmax:25,Fmin:18})}
     text-align: left;
 `
